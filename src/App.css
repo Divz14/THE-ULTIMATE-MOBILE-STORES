@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
-}
+:root{
+  --mainBlue:#6d6dc4;
+  --lightBlue:#5c87a0;
+  --mainWhite:#f3f3f3;
+  --mainDark:#232528;
+  --mainYellow:#d1d416;
+  --lightOrange:#f7b63f;
+  
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+body{
+  font-family: 'Merriweather Sans', sans-serif !important;
+  background:var(--mainWhite) !important;
+   color:var(--mainYellow) !important;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-title
+{
+font-family: 'Lobster', cursive !important;
+text-transform: uppercase;
+letter-spacing:3px;
 }
-
-.App-link {
-  color: #61dafb;
+.text-Yellow
+{
+  color:var(--mainYellow);
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-bright
+{
+  color:var(--lightOrange);
+}
+.nav-link
+{
+  color:#ffbf00;
+}
+.btn-black{
+  background:transparent;
+  text-transform:capitalize;
+  font-size:0.8rem !important;
+  color:var(--mainDark);
+  border-radius:0 !important;
+  border:0.1rem solid var(--mainDark) !important;
+}
+.btn-black:hover{
+  background:var(--mainDark) !important;
+  color:var(--mainWhite) !important;
+}
+.cart-icon{
+  cursor:pointer;
+  font-size:1.2rem;
+  color:var(--mainYellow);
 }
